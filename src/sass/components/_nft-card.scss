@@ -15,24 +15,10 @@
   font-size: typography.$font-size-mobile;
   font-family: typography.$main-font;
   color: colors.$color-primary--base;
-  transition: 0.2s;
 
   &__photo {
     position: relative;
     border-radius: pxtorem.pxToRem(12);
-
-    &:hover div {
-      border-radius: pxtorem.pxToRem(12);
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 0;
-      bottom: 0.3rem;
-      left: 0;
-      right: 0;
-      background-color: hsla(178, 100%, 50%, 0.5);
-    }
 
     img {
       border-radius: pxtorem.pxToRem(12);
@@ -52,10 +38,6 @@
 
   &__title {
     color: #fff;
-
-    a:hover {
-      color: colors.$color-primary--accent;
-    }
   }
 
   &__description {
@@ -108,10 +90,6 @@
     a {
       color: #fff;
       font-weight: inherit;
-
-      &:hover {
-        color: colors.$color-primary--accent;
-      }
     }
   }
 }
@@ -119,6 +97,39 @@
 @media screen and (min-width: 768px) {
   .nft-card {
     font-size: typography.$font-size-desktop;
+
+    &__photo {
+      position: relative;
+      border-radius: pxtorem.pxToRem(12);
+
+      &:hover div {
+        border-radius: pxtorem.pxToRem(12);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom: 0.3rem;
+        left: 0;
+        right: 0;
+        background-color: hsla(178, 100%, 50%, 0.5);
+      }
+    }
+  }
+
+  .nft-card-content__title {
+    a:hover {
+      color: colors.$color-primary--accent;
+    }
+  }
+
+  .creator-info__credits {
+    font-size: pxtorem.pxToRem(16);
+    font-weight: 300;
+
+    a:hover {
+      color: colors.$color-primary--accent;
+    }
   }
 
   .sale-info__time-left,
