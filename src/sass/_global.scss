@@ -4,68 +4,14 @@
 
 body {
   background-color: colors.$color-neutral--main-bg;
-  font-size: pxtorem.pxToRem(18);
+  font-size: typography.$font-size-mobile;
   font-family: typography.$main-font;
   color: colors.$color-primary--base;
   color: colors.$color-primary--base;
 }
 
-.nft-card {
-  width: pxtorem.pxToRem(328);
-  height: pxtorem.pxToRem(544);
-  background-color: colors.$color-neutral--card-bg;
-  border-radius: pxtorem.pxToRem(16);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &__photo {
-    border-radius: pxtorem.pxToRem(12);
-  }
-}
-
-.nft-card-content {
-  display: flex;
-  flex-direction: column;
-  width: pxtorem.pxToRem(278);
-  border-bottom: 1px solid colors.$color-neutral--line;
-  padding: pxtorem.pxToRem(16) 0;
-  gap: pxtorem.pxToRem(14);
-
-  &__title {
-    color: #fff;
-  }
-
-  &__description {
-    font-weight: 300;
-    font-size: pxtorem.pxToRem(16);
-    padding: pxtorem.pxToRem(12) 0;
-  }
-}
-
-.sale-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: pxtorem.pxToRem(15);
-  gap: pxtorem.pxToRem(16);
-
-  &__price {
-    display: flex;
-    align-items: center;
-    color: colors.$color-primary--accent;
-
-    img {
-      padding-right: pxtorem.pxToRem(8);
-    }
-  }
-
-  &__time-left {
-    display: flex;
-    align-items: center;
-
-    img {
-      padding-right: pxtorem.pxToRem(8);
-    }
+@media screen and (min-width: 768px) {
+  body {
+    font-size: typography.$font-size-desktop;
   }
 }

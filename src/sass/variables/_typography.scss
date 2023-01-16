@@ -3,5 +3,6 @@
 @import url("/node_modules/@fontsource/outfit/400.css");
 @import url("/node_modules/@fontsource/outfit/600.css");
 
-$base-font-size: pxtorem.pxToRem(18);
+$font-size-desktop: pxtorem.pxToRem(16);
+$font-size-mobile: pxtorem.pxToRem(18);
 $main-font: "Outfit", sans-serif;
