@@ -8,14 +8,19 @@
   <meta name="description" content="">
   <title>NFT preview card component</title>
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="sass/_styles.scss">
+  <link rel="stylesheet" href="sass/styles.scss">
 </head>
 
 <body>
   <article class="nft-card">
-    <img class="nft-card__photo" src="images/image-equilibrium.jpg" alt="Equilibrium" height="278" width="278">
+    <div class="nft-card__photo">
+      <a href="view-product">
+        <img src="images/image-equilibrium.jpg" alt="Equilibrium" height="278" width="278">
+        <div><img src="images/icon-view.svg" alt="View icon"></div>
+      </a>
+    </div>
     <div class="nft-card-content">
-      <h3 class="nft-card-content__title">Equilibrium #3429</h3>
+      <h3 class="nft-card-content__title"><a href="buy-product">Equilibrium #3429</a></h3>
       <span class="nft-card-content__description">Our Equilibrium collection promotes balance and calm.</span>
       <div class="sale-info">
         <span class="sale-info__price"><img src="images/icon-ethereum.svg" alt="Ethereum icon">0.041 ETH</span>

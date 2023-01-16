@@ -13,9 +13,34 @@
   justify-content: space-evenly;
   padding: 0 pxtorem.pxToRem(24);
   font-size: typography.$font-size-mobile;
+  font-family: typography.$main-font;
+  color: colors.$color-primary--base;
+  transition: 0.2s;
 
   &__photo {
+    position: relative;
     border-radius: pxtorem.pxToRem(12);
+
+    &:hover div {
+      border-radius: pxtorem.pxToRem(12);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      bottom: 0.3rem;
+      left: 0;
+      right: 0;
+      background-color: hsla(178, 100%, 50%, 0.5);
+    }
+
+    img {
+      border-radius: pxtorem.pxToRem(12);
+    }
+
+    div {
+      display: none;
+    }
   }
 }
 
@@ -27,6 +52,10 @@
 
   &__title {
     color: #fff;
+
+    a:hover {
+      color: colors.$color-primary--accent;
+    }
   }
 
   &__description {
@@ -90,9 +119,6 @@
 @media screen and (min-width: 768px) {
   .nft-card {
     font-size: typography.$font-size-desktop;
-    font-size: typography.$font-size-mobile;
-    font-family: typography.$main-font;
-    color: colors.$color-primary--base;
   }
 
   .sale-info__time-left,
