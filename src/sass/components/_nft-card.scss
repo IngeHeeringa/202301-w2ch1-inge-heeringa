@@ -1,0 +1,94 @@
+@use "../functions/pxtorem";
+@use "../variables/colors";
+@use "../variables/typography";
+
+.nft-card {
+  width: pxtorem.pxToRem(328);
+  height: pxtorem.pxToRem(544);
+  background-color: colors.$color-neutral--card-bg;
+  border-radius: pxtorem.pxToRem(16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 pxtorem.pxToRem(24);
+
+  &__photo {
+    border-radius: pxtorem.pxToRem(12);
+  }
+}
+
+.nft-card-content {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid colors.$color-neutral--line;
+  gap: pxtorem.pxToRem(16);
+
+  &__title {
+    color: #fff;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: pxtorem.pxToRem(16);
+  }
+}
+
+.sale-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: pxtorem.pxToRem(15);
+  padding-bottom: pxtorem.pxToRem(16);
+
+  &__price {
+    display: flex;
+    align-items: center;
+    color: colors.$color-primary--accent;
+
+    img {
+      padding-right: pxtorem.pxToRem(8);
+    }
+  }
+
+  &__time-left {
+    display: flex;
+    align-items: center;
+
+    img {
+      padding-right: pxtorem.pxToRem(8);
+    }
+  }
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+
+  &__avatar {
+    width: pxtorem.pxToRem(32);
+    margin-right: pxtorem.pxToRem(16);
+  }
+
+  &__credits {
+    font-size: pxtorem.pxToRem(16);
+    font-weight: 300;
+
+    a {
+      color: #fff;
+      font-weight: inherit;
+
+      &:hover {
+        color: colors.$color-primary--accent;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sale-info__time-left,
+  .creator-info__credits {
+    font-size: pxtorem.pxToRem(14);
+  }
+}
