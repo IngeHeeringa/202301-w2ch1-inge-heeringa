@@ -1,0 +1,7 @@
+@use "functions/pxtorem";
+@import url("/node_modules/@fontsource/outfit/300.css");
+@import url("/node_modules/@fontsource/outfit/400.css");
+@import url("/node_modules/@fontsource/outfit/600.css");
+
+$base-font-size: pxtorem.pxRoRem(18);
+$main-font: "Outfit", sans-serif;
