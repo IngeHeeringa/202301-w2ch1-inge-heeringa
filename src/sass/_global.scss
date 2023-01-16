@@ -25,9 +25,47 @@ body {
 }
 
 .nft-card-content {
+  display: flex;
+  flex-direction: column;
   width: pxtorem.pxToRem(278);
+  border-bottom: 1px solid colors.$color-neutral--line;
+  padding: pxtorem.pxToRem(16) 0;
+  gap: pxtorem.pxToRem(14);
 
   &__title {
     color: #fff;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: pxtorem.pxToRem(16);
+    padding: pxtorem.pxToRem(12) 0;
+  }
+}
+
+.sale-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: pxtorem.pxToRem(15);
+  gap: pxtorem.pxToRem(16);
+
+  &__price {
+    display: flex;
+    align-items: center;
+    color: colors.$color-primary--accent;
+
+    img {
+      padding-right: pxtorem.pxToRem(8);
+    }
+  }
+
+  &__time-left {
+    display: flex;
+    align-items: center;
+
+    img {
+      padding-right: pxtorem.pxToRem(8);
+    }
   }
 }
