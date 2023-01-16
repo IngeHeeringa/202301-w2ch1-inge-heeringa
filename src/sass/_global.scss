@@ -1,0 +1,16 @@
+@use "functions/pxtorem";
+@use "variables/colors";
+@use "variables/typography";
+
+body {
+  background-color: colors.$color-neutral--main-bg;
+  font-size: pxtorem.pxToRem(18);
+  font-family: typography.$main-font;
+}
+
+.nft-card {
+  width: pxtorem.pxToRem(328);
+  height: pxtorem.pxToRem(544);
+  background-color: colors.$color-neutral--card-bg;
+  border-radius: pxtorem.pxToRem(16);
+}
