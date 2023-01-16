@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 0 pxtorem.pxToRem(24);
+  font-size: typography.$font-size-mobile;
 
   &__photo {
     border-radius: pxtorem.pxToRem(12);
@@ -87,6 +88,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .nft-card {
+    font-size: typography.$font-size-desktop;
+    font-size: typography.$font-size-mobile;
+    font-family: typography.$main-font;
+    color: colors.$color-primary--base;
+  }
+
   .sale-info__time-left,
   .creator-info__credits {
     font-size: pxtorem.pxToRem(14);
