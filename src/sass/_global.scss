@@ -22,3 +22,11 @@ body {
     border-radius: pxtorem.pxToRem(12);
   }
 }
+
+.nft-card-content {
+  width: pxtorem.pxToRem(278);
+
+  &__title {
+    color: #fff;
+  }
+}
